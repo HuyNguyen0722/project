@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-logo,
+.award-title {
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.cta-button {
+  background-color: #707e5c; 
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+.cta-button:hover {
+  background-color: #5a664a;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+.main-nav a,
+.login-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.logo-container {
+  text-align: center;
+}
+.logo-image {
+  width: 50px; 
+  margin-bottom: 10px;
+}
+.nav-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 2px; 
+  display: block;
+}
+.subtitle {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.login-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0; 
+}
+.sidebar-sticky {
+  position: sticky;
+  top: 150px; 
+}
+.sidebar-widget {
+  margin-bottom: 35px;
+}
+.widget-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.sidebar-widget p {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
+.best-blog {
+  text-align: center;
+}
+.award-sub {
+  font-size: 1rem;
+  font-style: italic;
+  color: #888;
+}
+.award-title {
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #000;
+  margin: 10px 0;
+}
+.award-year {
+  display: inline-block;
+  font-size: 1rem;
+  color: #888;
+  padding: 0 20px;
+  position: relative;
+}
+.award-year:before,
+.award-year:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background: #ccc;
+}
+.award-year:before {
+  left: -40px;
+}
+.award-year:after {
+  right: -40px;
+}
+
+.cookbook-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.subscribe-form label {
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.social-widget {
+  text-align: center;
+}
+.social-widget a {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-widget a:hover {
+  color: #707e5c;
+}
+
+.post-feed {
+  flex-grow: 1; 
+}
+.post-card {
+  background: #ffffff;
+  border: 1px solid #eee;
+  margin-bottom: 40px;
+  transition: box-shadow 0.3s;
+}
+.post-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.post-card img {
+  width: 100%;
+  height: auto; 
+}
+.card-content {
+  padding: 25px 30px;
+}
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.author-icon {
+  font-size: 1.5rem; 
+  color: #ccc; 
+}
+
+.card-content h3 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 15px;
+}
+.snippet {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+.card-content hr {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+  margin: 25px 0;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-stats {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #888;
+}
+.post-stats span i {
+  margin-right: 5px;
+}
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: #888;
+}
+.like-button .fa-heart {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.like-button.liked .fa-heart {
+  color: #d90700; 
+  font-weight: 900; 
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #555;
+}
+.footer-social {
+  margin-top: 15px;
+}
+.footer-social a {
+  color: #333;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-social a:hover {
+  color: #707e5c;
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #707e5c;
+  color: white;
+  border: none;
+  border-radius: 25px; 
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 100;
+}
+
+@media (max-width: 992px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar-sticky {
+    position: static; 
+  }
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .main-nav,
+  .login-nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
