@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiteBlitz - Giao Đồ Ăn Nhanh</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="nav-logo">MINDXFOOD</a>
+
+        <ul class="nav-menu">
+          <li><a href="#home">Trang Chủ</a></li>
+          <li><a href="#about">Giới Thiệu</a></li>
+          <li><a href="#menu">Sản Phẩm</a></li>
+          <li><a href="#">Tin Tức</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <div class="nav-contact">
+            <span>Gọi ngay</span>
+            <a href="tel:0313728397">0934281259</a>
+          </div>
+          <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i><span>0</span></a>
+          </div>
+          <button class="cta-button nav-cta" onclick="datHang()">
+            Đặt Hàng Ngay <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="sub-title">Welcome to MindXFood</span>
+          <h1>Mỗi Ngày<br />Một Hương Vị</h1>
+          <button class="cta-button red-button" onclick="datHang()">
+            Xem Menu
+          </button>
+        </div>
+        <div class="hero-image">
+          <img
+            src="../business/image/burger-removebg-preview.png"
+            alt="Burger"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="promo-section">
+      <div class="container promo-grid">
+        <div class="promo-card card-red">
+          <div class="card-text">
+            <h2>Thưởng Thức Vị Burger Đỉnh Cao</h2>
+            <p>Giảm ngay 20% cho tuần này</p>
+            <a href="#" class="promo-link">MUA NGAY</a>
+          </div>
+          <img
+            src="../business/image/burger-removebg-preview.png"
+            alt="Burger"
+          />
+        </div>
+        <div class="promo-card card-orange">
+          <div class="card-text">
+            <h2>Khoai Tây Chiên</h2>
+            <p>Khoai Tây Chiên Giòn Rụm - Deal Hot 30%</p>
+            <a href="#" class="promo-link">MUA NGAY</a>
+          </div>
+          <img
+            src="../business/image/khoai-tay-removebg-preview.png"
+            alt="Fries"
+          />
+        </div>
+        <div class="promo-card card-green">
+          <div class="card-text">
+            <h2>Mỳ Ý</h2>
+            <p>Mỳ Ý Đậm Đà - Ưu Đãi giảm giá 25% ngay hôm nay</p>
+            <a href="#" class="promo-link">MUA NGAY</a>
+          </div>
+          <img src="../business/image/my-y.png" alt="Pasta" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container about-container">
+        <div class="about-image">
+          <img
+            src="https://biteblitz.monamedia.net/wp-content/uploads/2023/08/about_2_1.png"
+            alt="Steak plate"
+          />
+        </div>
+        <div class="about-text">
+          <span class="sale-badge">40% SALE</span>
+          <h2>Nơi Tin Cậy Cho Đồ Ăn Nhanh Chất Lượng</h2>
+          <p>
+            Chúng tôi cam kết mang đến cho bạn những món ăn nhanh ngon miệng,
+            tươi ngon và giá cả hợp lý. Từ những món ăn kinh điển đến hương vị
+            mới lạ, mỗi miếng ăn đều là một trải nghiệm.
+          </p>
+          <div class="about-icons">
+            <div class="icon-item">
+              <i class="fas fa-utensils"></i>
+              <span>Ngon Miệng</span>
+            </div>
+            <div class="icon-item">
+              <i class="fas fa-tint"></i>
+              <span>Tươi Ngon</span>
+            </div>
+            <div class="icon-item">
+              <i class="fas fa-dollar-sign"></i>
+              <span>Giá Tốt</span>
+            </div>
+          </div>
+          <button class="cta-button red-button" onclick="datHang()">
+            Khám Phá <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2>Thực Đơn Được <span class="text-red">Yêu Thích Nhất</span></h2>
+        <p class="section-subtitle">
+          Thưởng thức những món ăn nhanh hấp dẫn và ngon miệng nhất
+        </p>
+
+        <div class="menu-tabs">
+          <button class="tab-link active">Đồ Ăn Nhanh</button>
+          <button class="tab-link">Đồ Ăn Healthy</button>
+        </div>
+
+        <div class="icon-categories">
+          <div class="icon-cat-item active" id="cat-all">
+            <i class="fas fa-border-all"></i><span>Tất Cả</span>
+          </div>
+          <div class="icon-cat-item" id="cat-chicken">
+            <i class="fas fa-drumstick-bite"></i><span>Chicken</span>
+          </div>
+          <div class="icon-cat-item" id="cat-combo">
+            <i class="fas fa-box"></i><span>Combo</span>
+          </div>
+          <div class="icon-cat-item" id="cat-desserts">
+            <i class="fas fa-ice-cream"></i><span>Desserts</span>
+          </div>
+          <div class="icon-cat-item" id="cat-dosa">
+            <i class="fas fa-cookie"></i><span>Dosa</span>
+          </div>
+          <div class="icon-cat-item" id="cat-vegetable">
+            <i class="fas fa-carrot"></i><span>Vagetable</span>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="../business/image/pho-ly.png" alt="Phở Ly Siêu Tốc" />
+            <h3>Phở Ly Siêu Tốc</h3>
+            <p>Barbecue Italian cuisine pizza</p>
+            <span class="price">270,000đ</span>
+          </div>
+          <div class="product-card">
+            <img
+              src="../business/image/pizza-mini.png"
+              alt="Pizza Mini Vị Đậm"
+            />
+            <h3>Pizza Mini Vị Đậm</h3>
+            <p>Barbecue Italian cuisine pizza</p>
+            <span class="price">390,000đ</span>
+          </div>
+          <div class="product-card">
+            <img src="../business/image/my-xao.png" alt="Mỳ xào sốt mắm tỏi" />
+            <h3>Mỳ xào sốt mắm tỏi</h3>
+            <p>American-inspired sushi roll</p>
+            <span class="price">270,000đ</span>
+          </div>
+          <div class="product-card">
+            <img
+              src="../business/image/my-xao-sieu-tic.png"
+              alt="Mì Xào Siêu Tốc"
+            />
+            <h3>Mì Xào Siêu Tốc</h3>
+            <p>Chow Mien Fried noodles</p>
+            <span class="price">270,000đ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-banner">
+      <div class="container offer-container">
+        <div class="offer-text">
+          <span class="sub-title">Today Special Offer</span>
+          <h2>BÙNG NỔ VỊ NGON</h2>
+          <h2>BURGER SIÊU HOT!</h2>
+          <span class="offer-badge">
+            GIẢM NGAY
+            <strong>32%</strong>
+            HÔM NAY
+          </span>
+        </div>
+        <div class="offer-image">
+          <img src="../business/image/hot-burger.png" alt="Hot Burger" />
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="container">
+        <h2>Những Món Ngon <span class="text-red">Không Thể Bỏ Qua</span></h2>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <img
+              src="../business/image/thit-nuong.png"
+              alt="Thịt Nướng Truyền Thống"
+            />
+            <h3>Thịt nướng</h3>
+            <p>Grilling Churras Meat</p>
+            <span class="price">340,000đ</span>
+          </div>
+          <div class="product-card">
+            <img src="../business/image/my-y-sot-kem.png" alt="Mỳ ý sốt kem" />
+            <h3>Mỳ ý sốt kem</h3>
+            <p>Four Cheese Heaven</p>
+            <span class="price">180,000đ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-col">
+          <h3>PIZZAN</h3>
+          <p>
+            Nơi mang đến những hương vị đồ ăn nhanh tuyệt hảo, phục vụ nhanh
+            chóng và chất lượng.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Liên Kết Nhanh</h3>
+          <ul>
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#menu">Thực Đơn</a></li>
+            <li><a href="#">Khuyến Mãi</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Liên Hệ</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 268 Trần Nguyên Hãn, Lê Chân,
+            Hải Phòng
+          </p>
+          <p><i class="fas fa-phone"></i>0934281259</p>
+          <p><i class="fas fa-envelope"></i> huynv@gmail.vn</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pizzan. Bản quyền thuộc về MindX Technology School.</p>
+      </div>
+    </footer>
+
+    <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

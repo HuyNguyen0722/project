@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiteBlitz - Giao Đồ Ăn Nhanh</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="nav-logo">BiteBlitz</a>
+        <ul class="nav-menu">
+          <li><a href="#home">Trang Chủ</a></li>
+          <li><a href="#menu">Thực Đơn</a></li>
+          <li><a href="#">Khuyến Mãi</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+        </ul>
+        <a href="#" class="nav-button cta-button" onclick="datHang()"
+          >Giỏ Hàng (0)</a
+        >
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+      <div class="container hero-content">
+        <h1>Đồ Ăn Nóng Hổi</h1>
+        <h2>Giao Trong 30 Phút!</h2>
+        <p>Từ món Á đến món Âu, BiteBlitz có tất cả những gì bạn thèm.</p>
+        <button class="cta-button" onclick="datHang()">Đặt Món Ngay</button>
+      </div>
+    </header>
+
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2>Thực Đơn Nổi Bật</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="https://via.placeholder.com/300x200/FF6347/FFFFFF?text=Burger"
+              alt="Burger"
+            />
+            <div class="card-info">
+              <h3>Cheeseburger Hoàng Hảo</h3>
+              <p>Bò Mỹ, phô mai Cheddar, rau diếp tươi và sốt cà chua.</p>
+              <div class="card-footer">
+                <span class="price">129.000đ</span>
+                <button class="add-button" onclick="datHang()">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://via.placeholder.com/300x200/4682B4/FFFFFF?text=Pizza"
+              alt="Pizza"
+            />
+            <div class="card-info">
+              <h3>Pizza Hải Sản</h3>
+              <p>Tôm, mực tươi, phô mai Mozzarella và ớt chuông.</p>
+              <div class="card-footer">
+                <span class="price">219.000đ</span>
+                <button class="add-button" onclick="datHang()">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://via.placeholder.com/300x200/32CD32/FFFFFF?text=Salad"
+              alt="Salad"
+            />
+            <div class="card-info">
+              <h3>Salad Caesar Gà Nướng</h3>
+              <p>Ức gà nướng, xà lách Romaine, bánh mì sấy và sốt Caesar.</p>
+              <div class="card-footer">
+                <span class="price">89.000đ</span>
+                <button class="add-button" onclick="datHang()">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://via.placeholder.com/300x200/FFA500/FFFFFF?text=Drinks"
+              alt="Drinks"
+            />
+            <div class="card-info">
+              <h3>Trà Cam Vải</h3>
+              <p>Trà ủ lạnh, mứt cam vàng và vải tươi mọng nước.</p>
+              <div class="card-footer">
+                <span class="price">45.000đ</span>
+                <button class="add-button" onclick="datHang()">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Pasta"
+              alt="Pasta"
+            />
+            <div class="card-info">
+              <h3>Mì Ý Sốt Bò Bằm</h3>
+              <p>Mì Ý, sốt bò bằm truyền thống và lá húng quế Tây.</p>
+              <div class="card-footer">
+                <span class="price">109.000đ</span>
+                <button class="add-button" onclick="datHang()">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="https://via.placeholder.com/300x200/D2691E/FFFFFF?text=Coffee"
+              alt="Coffee"
+            />
+            <div class="card-info">
+              <h3>Cà Phê Muối</h3>
+              <p>Cà phê Robusta ủ phin, kết hợp kem muối béo ngậy.</p>
+              <div class="card-footer">
+                <span class="price">35.000đ</span>
+                <button class="add-button" onclick="datHang()">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 BiteBlitz. Phát triển bởi Mona Media.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
